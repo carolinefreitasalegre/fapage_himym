@@ -265,7 +265,8 @@ a:hover{
     min-height: 90vh;
     background-image: url('imagens/imagenSection/plataformas.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: fixed;
+    
     background-size: 100%;
     color: white;
     text-align: center;
