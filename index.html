@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlog How I Met Your Mother</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="mensagem()">
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"x><img id="himym" src="imagens/" alt=""></div>
+            <!-- NAVEGAÇÃO MENU -->
+            <ul class="nav-links">
+            <!-- CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVEGAÇÃO MENUS -->
+            <div class="menu">
+            <li><a href="/">SINOPSE</a></li>
+            <li><a href="/">ELENCO</a></li>
+            <li><a href="/">QUIZ</a>
+            <li><a href="/">TEMPORADAS</a>
+            <li><a href="/">ONDE ASSISTIR</a>
+
+            <!-- MENU SUSPENSO OU DROPDOWN MENU -->
+          
+            </nav>
+        
+            <div class="imagemHeader">
+              <img src="imagens/himym.png" alt="">
+              <img src="imagens/guardachuvaamarelo.png"  alt="">
+
+           </div>
+
+
+
+
+            
+    </header>
+    <main>
+       
+        <section id="sectionSinopse">
+          <div class="sinopseFoto">
+            <img id="img01" width="20%" src="imagens/imagenSection/imagem central.png" alt="img01">
+            <div class="textoInicio">
+            <h1 class="Titulo">Sinopse</h1>
+            <p class="paragrafo">Em 2030, o arquiteto Ted Mosby (Josh Radnor) conta a história sobre como conheceu a mãe dos seus filhos. 
+                Ele volta no tempo para 2005, relembrando suas aventuras amorosas em Nova York e a busca pela mulher dos seus sonhos. 
+                Ao longo do anos, Ted aproveita para falar a jornada dos seus amigos: o advogado Marshall Eriksen (Jason Segel), a professora 
+                Lily Aldrin (Alyson Hannigan), a jornalista Robin Scherbatsky (Cobie Smulders) e o mulherengo convicto Barney Stinson 
+                (Neil Patrick Harris).</p>
+            </div>
+           </div>
+        </section>
+       
+        <section id="sectionElenco">
+         
+            <h1 class="Titulo">Elenco Principal</h1>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="imagens/elenco/Josh Radnor.jpg" class="d-block">
+                  <div class="carousel-caption">
+                    <h5>Josh Radnor</h5>
+                    <p>Como: Ted Mosby</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imagens/elenco/Colbie Smulders.jpg" class="d-block">
+                  <div class="carousel-caption">
+                    <h5>Colbie Smulders</h5>
+                    <p>Como: Robin Scherbatsky</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imagens/elenco/Neil Patrick Harris.jpg" class="d-block">
+                  <div class="carousel-caption">
+                    <h5>Neil Patrick Harris</h5>
+                    <p>Como: Barney Stinson</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imagens/elenco/Alyson Hannigan.jpg" class="d-block">
+                  <div class="carousel-caption">
+                    <h5>Alyson Hannigan</h5>
+                    <p>Como: Lily Aldrin</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imagens/elenco/Jason Segel.jpg" class="d-block">
+                  <div class="carousel-caption">
+                    <h5>Jason Segel</h5>
+                    <p>Como: Marshall Eriksen</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </section>
+
+        <section id="sectionQuiz"> 
+          <h1 class="Titulo">Quem é você em How I Met Your Mother?</h1> 
+           <div class="quiz">
+             <div class="quiz-caracteres">
+               <div class="img-resposta">
+                <img src="imagens/imagenSection/quiz.png" alt="fotoquiz">
+                <p id="respostaQuiz"></p>
+              </div>
+              <button onclick="clicar()" id="botao">
+               Clique e confira!
+              </button>
+            </div>
+           
+          </div>
+
+        
+       
+         
+
+
+
+
+        </section>
+        
+
+        <section id="sectionTemporadas">
+            
+             <div class="Titulo" >
+               <h1>Temporadas</h1>
+               <h2>A série conta com 9 temporadas e 208 episódios.</h2>
+             </div>  
+             
+            <div class="temporadas">
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 01</h5>
+                  <p class="card-text">Ted Mosby é um arquiteto solteiro que vive em Manhattan 
+                    com seus dois melhores amigos da faculdade: Marshall Eriksen e Lily Aldrin, 
+                    namorados há nove anos....</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-1067/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 02</h5>
+                  <p class="card-text">Barney tenta ajudar Marshall a superar Lily o ensinando 
+                    a conquistar outras mulheres. Um segredo de família é revelado durante um 
+                    brunch e deixa Ted chocado...</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-4975/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 03</h5>
+                  <p class="card-text">Quando Robin chega de viagem com um namorado 
+                    argentino bonitão, Ted fica com ciúmes e decide com Barney para
+                     esquecê-la. Lily e Marshall tomam uma série de decisões irresponsáveis
+                      ao comprar um apartamento novo...</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-5669/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 04</h5>
+                  <p class="card-text">Quando Stella finalmente responde a Ted sobre seu
+                     pedido de casamento, Barney percebe que pode estar apaixonado por Robin.
+                      Lily e Marshall têm opiniões diferentes sobre se devem ou não ter um bebê.</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-7541/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 05</h5>
+                  <p class="card-text">Quando a turma descobre que Barney e Robin não
+                    conseguem definir seu relacionamento, Lily os obriga a enfrentar 
+                    seu maior medo: assumir um compromisso amoroso com outra pessoa.</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-12384/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 06</h5>
+                  <p class="card-text">A turma resolve ajudar a mãe de Barney a se mudar de casa, 
+                    mas acaba desvendando segredos surpreendentes sobre ele. Robin promete convencer
+                     os amigos de que é uma nova-iorquina de verdade, apesar de já terem provado o contrário. </p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-16388/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 07</h5>
+                  <p class="card-text">Ted reencontra sua antiga namorada, Victoria, e tenta
+                     fazer as pazes com ela desde que ele a traiu durante o relacionamento. 
+                     Robin descobre que nunca poderá ter filhos, mas decide esconder a notícia
+                      dos amigos.</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-20033/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 08</h5>
+                  <p class="card-text">Para acalmar Robin, que está nervosa por se casar
+                     com Barney, Ted conta a história de como ele convenceu Victoria a escrever
+                      um bilhete no altar para seu ex-noivo Klaus, explicando por que ela fugiu do casamento. </p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-21137/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+           
+
+              <div class="card" style="width: 14rem;">
+                <img src="imagens/temporadas/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Temporada 09</h5>
+                  <p class="card-text">
+                    SINOPS
+                    A caminho de Long Island durante o fim de semana do casamento, Robin
+                     e Barney descobrem que eles têm um primo em comum e temem que sejam
+                      parentes de sangue.</p>
+                  <a href="https://www.adorocinema.com/series/serie-446/temporada-22414/" target="_blank" class="btn btn-primary">Continue lendo...</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+        
+
+
+
+               
+            </div>
+        </section> 
+      
+        <section id="sectionPlataformas">
+          <div class="plataformas">
+
+            <div class="textoPlataformas">
+              <h1>Onde assistir?</h1>
+             <h2>Confira as plataformas de stream onde você pode ver a série na íntegra.</h2>
+            </div> 
+
+           <div class="canaisStream">
+           
+              <a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR" target="_blank"><img src="imagens/primevideo.jfif"  alt=""></a>
+              <a href="https://www.hbomax.com/br/pt" target="_blank"><img src="imagens/starplus.jpg"  alt=""></a>
+                      
+           </div>
+          </div>
+        </section>
+        
+       
+        <footer>
+          <div class="todosDireitos">
+            <div class="direitosFaixa">
+              <img src="imagens/footer/12.png" alt="">
+              
+              <img src="imagens/footer/cc.png" alt="">
+              <p>2005 - 2013 Romance, Comédia Romântica, Comédia.</p>
+            </div>
+            <div class="direitosFaixa">
+              <img src="imagens/footer/c.png"   alt="">
+              <p>Todos os direitos reservados.</p>
+            </div>
+        </div>
+        </footer>
+
+
+
+
+
+      
+
+    </main>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
