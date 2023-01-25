@@ -9,55 +9,46 @@
     <script src="script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body onload="mensagem()">
-    <header>
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo"x><img id="himym" src="imagens/" alt=""></div>
-            <!-- NAVEGAÇÃO MENU -->
-            <ul class="nav-links">
-            <!-- CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!-- NAVEGAÇÃO MENUS -->
-            <div class="menu">
+  
+
+
+  
+
+    <header> 
+     
+      
+      <img id="img-header" width="3%" src="imagens/guardachuvaamarelo.png"  alt="">
+
             <li><a href="/">SINOPSE</a></li>
             <li><a href="/">ELENCO</a></li>
             <li><a href="/">QUIZ</a>
             <li><a href="/">TEMPORADAS</a>
-            <li><a href="/">ONDE ASSISTIR</a>
-
-            <!-- MENU SUSPENSO OU DROPDOWN MENU -->
-          
-            </nav>
-        
-            <div class="imagemHeader">
-              <img src="imagens/himym.png" alt="">
-              <img src="imagens/guardachuvaamarelo.png"  alt="">
-
-           </div>
-
-
-
-
-            
+            <li><a href="/">PLATAFORMAS</a> 
+                      
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
     </header>
-    <main>
-       
-        <section id="sectionSinopse">
+
+      <main>         
+
+       <section id="sectionSinopse">
           <div class="sinopseFoto">
-            <img id="img01" width="20%" src="imagens/imagenSection/imagem central.png" alt="img01">
-            <div class="textoInicio">
-            <h1 class="Titulo">Sinopse</h1>
-            <p class="paragrafo">Em 2030, o arquiteto Ted Mosby (Josh Radnor) conta a história sobre como conheceu a mãe dos seus filhos. 
+           <div class="textoInicio">
+                <h1 class="Titulo">Sinopse</h1>
+                <p class="paragrafo">Em 2030, o arquiteto Ted Mosby (Josh Radnor) conta a história sobre como conheceu a mãe dos seus filhos. 
                 Ele volta no tempo para 2005, relembrando suas aventuras amorosas em Nova York e a busca pela mulher dos seus sonhos. 
                 Ao longo do anos, Ted aproveita para falar a jornada dos seus amigos: o advogado Marshall Eriksen (Jason Segel), a professora 
                 Lily Aldrin (Alyson Hannigan), a jornalista Robin Scherbatsky (Cobie Smulders) e o mulherengo convicto Barney Stinson 
                 (Neil Patrick Harris).</p>
+                <a href="https://youtu.be/aJtVL2_fA5w" target="blank"><button class="botaoTrailer">Assistir ao Trailer</button></a>
             </div>
-           </div>
+            <img padding="20px" width="50%" src="imagens/imagenSection/imagem sections.jpg.png" alt="">
+          </div>
         </section>
        
         <section id="sectionElenco">
@@ -120,35 +111,65 @@
         </section>
 
         <section id="sectionQuiz"> 
-          <h1 class="Titulo">Quem é você em How I Met Your Mother?</h1> 
-           <div class="quiz">
-             <div class="quiz-caracteres">
-               <div class="img-resposta">
-                <img src="imagens/imagenSection/quiz.png" alt="fotoquiz">
+          <div class="container">
+
+            <h1 class="Titulo">
+              Quem é você em How I Met Your Mother?
+            </h1> 
+            <p>Selecione as características semelhantes a você...</p>
+                <img id="img-quiz" src="imagens/imagenSection/quiz.png" alt="fotoquiz">
                 <p id="respostaQuiz"></p>
-              </div>
-              <button onclick="clicar()" id="botao">
-               Clique e confira!
-              </button>
-            </div>
-           
+            
+                <form action="quiz" onsubmit="submitQuiz()">
+                   <input type="checkbox" id="ironico" name="ironico" value="1">
+                   <label class="contant" for="ironico">Irônico(a)</label>
+                    
+                   <input type="checkbox" id="sagaz" name="sagaz" value="1">
+                   <label  class="contant"  for="sagaz">Sagaz</label>
+                  
+                    <input type="checkbox" id="manipular" name="manipular" value="10">
+                    <label class="contant"  for="manipular">Manipulador(a)</label>
+                  
+                    <input type="checkbox" id="persistente" name="persistente" value="persistente">
+                    <label class="contant"  for="persistente">Persistente</label>
+                  
+                    <input type="checkbox" id="romantico" name="romantico" value="romantico">
+                    <label class="contant"  for="romantico">Romântico(a)</label> 
+                  
+                    <input type="checkbox" id="emotivo" name="emotivo" value="emotivo">
+                    <label class="contant"  for="emotivo">Emotivo(a)</label>
+                 
+                    <input type="checkbox" id="curioso" name="curioso" value="curioso">
+                    <label class="contant"  for="curioso">Curioso(a)</label>
+                
+                    <input type="checkbox" id="faminto" name="faminto" value="faminto">
+                    <label class="contant"  for="faminto">Faminto(a)</label>
+                  
+                    <input type="checkbox" id="independente" name="independente" value="independente">
+                    <label class="contant"  for="independente">Independente</label>
+                  
+                    <input type="checkbox" id="egoista" name="egoista" value="egoista">
+                    <label class="contant"  for="egoista">Egoísta</label>
+                  <br>
+                
+                 
+                  <button   id="botao" onclick="submitQuiz()">Verificar</button>
+
+                  <!-- <input type="submit" value="Confira" id="botao" onsubmit="submitQuiz()">  -->
+                </form>
           </div>
-
-        
-       
-         
-
-
 
 
         </section>
         
 
+        
+
         <section id="sectionTemporadas">
             
-             <div class="Titulo" >
-               <h1>Temporadas</h1>
-               <h2>A série conta com 9 temporadas e 208 episódios.</h2>
+             <div class="Titulo-" >
+               <h1 class="Titulo">Temporadas</h1>
+               <h2 class="titulo02">A série conta com 9 temporadas e 208 episódios.</h2>
              </div>  
              
             <div class="temporadas">
@@ -273,15 +294,18 @@
           <div class="plataformas">
 
             <div class="textoPlataformas">
-              <h1>Onde assistir?</h1>
-             <h2>Confira as plataformas de stream onde você pode ver a série na íntegra.</h2>
+              <h1 class="Titulo">Onde assistir?</h1>
+             <h2  class="titulo02">Confira as plataformas de stream onde você pode ver a série na íntegra.</h2>
             </div> 
 
            <div class="canaisStream">
-           
-              <a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR" target="_blank"><img src="imagens/primevideo.jfif"  alt=""></a>
-              <a href="https://www.hbomax.com/br/pt" target="_blank"><img src="imagens/starplus.jpg"  alt=""></a>
-                      
+              <img class="img-plataformas" src="imagens/primevideo.jfif"  alt="">
+              <a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR" target="_blank"><button class="stream">Ir à Prime Video</button></a>
+              
+
+              <img class="img-plataformas" src="imagens/starplus.jpg"  alt="">
+              <a href="https://www.hbomax.com/br/pt" target="_blank"><button class="stream">Ir à Star Plus</button></a>
+               
            </div>
           </div>
         </section>
@@ -290,23 +314,17 @@
         <footer>
           <div class="todosDireitos">
             <div class="direitosFaixa">
-              <img src="imagens/footer/12.png" alt="">
+              <img id="idade" src="imagens/footer/12.png" alt="">
               
-              <img src="imagens/footer/cc.png" alt="">
+              <img id="cop" src="imagens/footer/cc.png" alt="">
               <p>2005 - 2013 Romance, Comédia Romântica, Comédia.</p>
             </div>
-            <div class="direitosFaixa">
-              <img src="imagens/footer/c.png"   alt="">
+            <div class="direitosFaixa02">
+              <img id="cc" src="imagens/footer/c.png"   alt="">
               <p>Todos os direitos reservados.</p>
             </div>
         </div>
         </footer>
-
-
-
-
-
-      
 
     </main>
 

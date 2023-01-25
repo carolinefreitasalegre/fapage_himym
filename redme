@@ -1,0 +1,42 @@
+  <form action="quiz">
+            
+                
+                    <input type="checkbox" id="manipular" name="manipular" value="manipular">
+                    <label for="manipular">Manipulador(a)</label>
+                  
+                    <input type="checkbox" id="persistente" name="persistente" value="persistente">
+                    <label for="persistente">Persistente</label>
+                  
+                    <input type="checkbox" id="romantico" name="romantico" value="romantico">
+                    <label for="romantico">Romântico(a)</label>
+                  
+                    <input type="checkbox" id="impulsivo" name="impulsivo" value="impulsivo">
+                    <label for="impulsivo">Impulsivo(a)</label>
+                
+                    <input type="checkbox" id="curioso" name="curioso" value="curioso">
+                    <label for="curioso">Curioso(a)</label>
+                
+                    <input type="checkbox" id="faminto" name="faminto" value="faminto">
+                    <label for="faminto">Faminto(a)</label>
+                  
+                    <input type="checkbox" id="ironico" name="ironico" value="ironico">
+                    <label for="ironico">Irônico(a)</label>
+                  
+                    <input type="checkbox" id="sagaz" name="sagaz" value="sagaz">
+                    <label for="sagaz">Sagaz</label>
+                  
+                    <input type="checkbox" id="independente" name="independente" value="independente">
+                    <label for="independente">Independente</label>
+                  
+                    <input type="checkbox" id="egoista" name="egoista" value="egoista">
+                    <label for="egoista">Egoísta</label>
+
+                  
+                  <button for="quiz" onclick="clicar()" id="botao">
+                    Confira!
+                  </button>
+                
+                   
+               
+                
+              </form>
